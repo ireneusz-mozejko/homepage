@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(189, 216, 207);
+}
+section{
+    background-color: antiquewhite;
+}
+h1 {
+    color: red;
+  }
+
+p {
+    color: rgb(23, 42, 190)
+}
+
+.hotpink-header{
+    color: hotpink;
+}
+
+#top{
+    background: rgb(40, 143, 11);
+}
+
+#info a{
+    color: rgb(163, 125, 12);
+}
