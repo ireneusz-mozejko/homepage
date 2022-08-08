@@ -68,3 +68,11 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+.list {
+    list-style: square;
+}
+
+.list__item {
+    color: #2ed409;
+}
