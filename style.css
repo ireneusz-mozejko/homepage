@@ -1,61 +1,70 @@
-body{
-    background-color: rgb(189, 216, 207);
-}
-section{
-    background-color: antiquewhite;
-}
-h1 {
-    color: rgb(28, 120, 16);
-  }
-
-p {
-    color: rgb(30, 35, 69) 
+body {
+  background-color: #fff;
 }
 
-.hotpink-header{
-    color: rgb(255, 105, 188);
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-#top{
-    background: rgb(222, 219, 21);
+.main__heading {
+  color: #92140c;
 }
 
-#info a{
-    color: rgb(230, 41, 41);
+.about {
+}
+
+.about__heading {
+  color: #1460aa;
+}
+
+.about__link {
+  color: #92140c;
 }
 
 .navigation {
-    background: #478a05;
-    padding: 16px;
-    border-radius: 8px;
+  background: #478a05;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .navigation__link {
-    color: #fff;
-    display: inline-block;
-    margin-right: 20px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .navigation__link--homepage {
-    background: yellow;
-    color: black;
+  background: yellow;
+  color: black;
+}
+
+.note {
+}
+
+.notes__heading {
+  color: #1460aa;
 }
 
 .week-summary {
-    padding: 16px;
-    border: 1px #ccc solid;
-    margin-bottom: 16px;
+  padding: 16px;
+  border: 1px #ccc solid;
+  margin-bottom: 16px;
 }
 
 .week-summary--special {
-    border: 1px blueviolet solid;
+  border: 1px blueviolet solid;
 }
 
 .week-summary__description {
-    color: #cf1ab7;   
+  color: #cf1ab7;
 }
 
 .week-summary__title {
-    color: #21a179;
+  color: #21a179;
 }
-          
+
+.footer {
+  max-width: 1024px;
+  margin: 0 auto;
+}

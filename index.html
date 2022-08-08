@@ -13,35 +13,46 @@
   <body>
     <header>
       <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
-        <a class="navigation__link navigation__link--HTML" href="nauka-html.html">Nauka HTML</a>
-        <a class="navigation__link navigation__link--CSS" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a
+          class="navigation__link navigation__link--HTML"
+          href="nauka-html.html"
+          >Nauka HTML
+        </a>
+        <a class="navigation__link navigation__link--CSS" href="nauka-css.html"
+          >Nauka CSS</a
+        >
       </nav>
     </header>
 
-    <main>
-      <header id="top">
-        <h1>Historia R2-D2</h1>
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 class="main__heading main__heading--js">Historia R2-D2</h1>
       </header>
 
-      <section id="info">
+      <section class="about">
         <!-- <h2 style="color: red; background: green">Krótka historia</h2> -->
-        <h2 class="hotpink-header">Krótka historia</h2>
-        <img src="R2D2-droid.png" alt="Droid R2D2"/>
-        <p>
+        <h2 class="about__heading">Kim jest ten typ?</h2>
+        <img class="about__picture" src="R2D2-droid.png" alt="Droid R2D2" />
+        <p class="about__description">
           Młay ale odważny, wszędobylski robot przeznaczony do naprawy usterek
           pojazdów w czasie lotu w przestrzeni kosmicznej.<br />Pierwotnie
           służył na królewskim statku Amidali z <b> </b>, gdzie wykazał się
           niezwykłymi zdolnościami mechanicznymi w czasie ucieczki przed blokadą
           Federacji Handlowej.<br />Razem z królową trafił na Tatooine, gdzie
           poznał robota protokolarnego
-          <a href="https://pl.wikipedia.org/wiki/C-3PO">C-3PO</a>, <br />co
-          zapoczątkowało ich niezwykłą, trwającą latami przyjaźń.
-          <a href="#notatki">Przejdź do pierwszego poznania</a>
+          <a class="about__link" href="https://pl.wikipedia.org/wiki/C-3PO"
+            >C-3PO</a
+          >, <br />co zapoczątkowało ich niezwykłą, trwającą latami przyjaźń.
+          <a class="about__link" href="#notatki">Przejdź do notatek</a>
         </p>
       </section>
-      <section id="notatki">
-        <h2>Przygody z Anakinem</h2>
+
+      <section class="notes" id="notatki">
+        <h2 class="notes__heading">Notatki z WTF: Co ten frontend</h2>
+
         <article class="week-summary">
           <h3 class="week-summary__title">Jak się poznali</h3>
           <p class="week-summary__description">
@@ -51,17 +62,21 @@
             Imperium tajne plany Gwiazdy Śmierci, biorąc udział w uwolnieniu
             Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy Śmierci.
           </p>
+          <p class="week-summary__description week-summary__description--js"></p>
         </article>
+
         <article class="week-summary week-summary--special">
           <h3 class="week-summary__title">Jak się poznali</h3>
           <p class="week-summary__description">
-            <strong>był potem osobistym astromechem Anakina Skywalkera</strong>, a w czasie Wojny
-            Domowej służył sprawie Rebelii, odbywając m.in. misję odnalezienia
-            Obi-Wana Kenobi'ego, przechowując w swojej pamięci wykradzione
-            Imperium tajne plany Gwiazdy Śmierci, biorąc udział w uwolnieniu
-            Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy Śmierci.
+            <strong>był potem osobistym astromechem Anakina Skywalkera</strong>,
+            a w czasie Wojny Domowej służył sprawie Rebelii, odbywając m.in.
+            misję odnalezienia Obi-Wana Kenobi'ego, przechowując w swojej
+            pamięci wykradzione Imperium tajne plany Gwiazdy Śmierci, biorąc
+            udział w uwolnieniu Hana Solo z pałacu Jabby oraz zniszczeniu
+            pierwszej Gwiazdy Śmierci.
           </p>
         </article>
+
         <article class="week-summary">
           <h3 class="week-summary__title">Jak się poznali</h3>
           <p class="week-summary__description">
@@ -74,11 +89,13 @@
         </article>
       </section>
     </main>
-    <footer>
+
+    <footer class="footer">
       Po zniknięciu Luke’a Skywalkera droid sam się wyłączył. Przechowywał on
-      mapę wiodącą do kryjówki ostatniego Jedi. Aktywował się sam po
-      zwycięskiej bitwie na Bazie Starkiller.
-      <a href="#top">Wróć na górę strony</a>
+      mapę wiodącą do kryjówki ostatniego Jedi. Aktywował się sam po zwycięskiej
+      bitwie na Bazie Starkiller.
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
-  </body>
+    <script src="main.js"></script> 
+  </body> 
 </html>
