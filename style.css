@@ -5,21 +5,57 @@ section{
     background-color: antiquewhite;
 }
 h1 {
-    color: red;
+    color: rgb(28, 120, 16);
   }
 
 p {
-    color: rgb(23, 42, 190)
+    color: rgb(30, 35, 69) 
 }
 
 .hotpink-header{
-    color: rgb(105, 255, 198);
+    color: rgb(255, 105, 188);
 }
 
 #top{
-    background: rgb(40, 143, 11);
+    background: rgb(222, 219, 21);
 }
 
 #info a{
-    color: rgb(163, 125, 12);
+    color: rgb(230, 41, 41);
 }
+
+.navigation {
+    background: #478a05;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.navigation__link {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation__link--homepage {
+    background: yellow;
+    color: black;
+}
+
+.week-summary {
+    padding: 16px;
+    border: 1px #ccc solid;
+    margin-bottom: 16px;
+}
+
+.week-summary--special {
+    border: 1px blueviolet solid;
+}
+
+.week-summary__description {
+    color: #cf1ab7;   
+}
+
+.week-summary__title {
+    color: #21a179;
+}
+          

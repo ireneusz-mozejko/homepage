@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
-</head>
-<body>
-  <main>
-    <h1 id="top">Historia R2-D2</h1>
-    <section id="info">
-      <!-- <h2 style="color: red; background: green">Krótka historia</h2> -->
-      <h2 class="hotpink-header">Krótka historia</h2>
-      <p>
-        Młay ale odważny, wszędobylski robot przeznaczony do naprawy usterek
-        pojazdów w czasie lotu w przestrzeni kosmicznej.<br>Pierwotnie służył na
-        królewskim statku Amidali z <b> </b>, gdzie wykazał się niezwykłymi
-        zdolnościami mechanicznymi w czasie ucieczki przed blokadą Federacji
-        Handlowej.<br>Razem z królową trafił na Tatooine, gdzie poznał robota
-        protokolarnego <a href="https://pl.wikipedia.org/wiki/C-3PO">C-3PO</a>,
-        <br>co zapoczątkowało ich niezwykłą,
-        trwającą latami
-        przyjaźń.
-      </p>
-    </section>
-    <section>
-      <h2>Przygody z Anakinem</h2>
-      <article>
-        <h3>Jak się poznali </h3>
-        <p> był potem osobistym astromechem Anakina Skywalkera, a w czasie
-          Wojny Domowej służył sprawie Rebelii, odbywając m.in. misję
-          odnalezienia Obi-Wana Kenobi'ego, przechowując w swojej pamięci
-          wykradzione Imperium tajne plany Gwiazdy Śmierci, biorąc udział w
-          uwolnieniu Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy
-          Śmierci.<a href="#info">Przejdź do info</a></p>
-      </article>
-      <article>
-        <h3>Jak się poznali </h3>
-        <p> był potem osobistym astromechem Anakina Skywalkera, a w czasie
-          Wojny Domowej służył sprawie Rebelii, odbywając m.in. misję
-          odnalezienia Obi-Wana Kenobi'ego, przechowując w swojej pamięci
-          wykradzione Imperium tajne plany Gwiazdy Śmierci, biorąc udział w
-          uwolnieniu Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy
-          Śmierci.</p>
-      </article>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link navigation__link--HTML" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link navigation__link--CSS" href="nauka-css.html">Nauka CSS</a>
+      </nav>
+    </header>
+
+    <main>
+      <header id="top">
+        <h1>Historia R2-D2</h1>
+      </header>
+
+      <section id="info">
+        <!-- <h2 style="color: red; background: green">Krótka historia</h2> -->
+        <h2 class="hotpink-header">Krótka historia</h2>
+        <img src="R2D2-droid.png" alt="Droid R2D2"/>
+        <p>
+          Młay ale odważny, wszędobylski robot przeznaczony do naprawy usterek
+          pojazdów w czasie lotu w przestrzeni kosmicznej.<br />Pierwotnie
+          służył na królewskim statku Amidali z <b> </b>, gdzie wykazał się
+          niezwykłymi zdolnościami mechanicznymi w czasie ucieczki przed blokadą
+          Federacji Handlowej.<br />Razem z królową trafił na Tatooine, gdzie
+          poznał robota protokolarnego
+          <a href="https://pl.wikipedia.org/wiki/C-3PO">C-3PO</a>, <br />co
+          zapoczątkowało ich niezwykłą, trwającą latami przyjaźń.
+          <a href="#notatki">Przejdź do pierwszego poznania</a>
+        </p>
+      </section>
+      <section id="notatki">
+        <h2>Przygody z Anakinem</h2>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Jak się poznali</h3>
+          <p class="week-summary__description">
+            był potem osobistym astromechem Anakina Skywalkera, a w czasie Wojny
+            Domowej służył sprawie Rebelii, odbywając m.in. misję odnalezienia
+            Obi-Wana Kenobi'ego, przechowując w swojej pamięci wykradzione
+            Imperium tajne plany Gwiazdy Śmierci, biorąc udział w uwolnieniu
+            Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy Śmierci.
+          </p>
+        </article>
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__title">Jak się poznali</h3>
+          <p class="week-summary__description">
+            <strong>był potem osobistym astromechem Anakina Skywalkera</strong>, a w czasie Wojny
+            Domowej służył sprawie Rebelii, odbywając m.in. misję odnalezienia
+            Obi-Wana Kenobi'ego, przechowując w swojej pamięci wykradzione
+            Imperium tajne plany Gwiazdy Śmierci, biorąc udział w uwolnieniu
+            Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy Śmierci.
+          </p>
+        </article>
+        <article class="week-summary">
+          <h3 class="week-summary__title">Jak się poznali</h3>
+          <p class="week-summary__description">
+            był potem osobistym astromechem Anakina Skywalkera, a w czasie Wojny
+            Domowej służył sprawie Rebelii, odbywając m.in. misję odnalezienia
+            Obi-Wana Kenobi'ego, przechowując w swojej pamięci wykradzione
+            Imperium tajne plany Gwiazdy Śmierci, biorąc udział w uwolnieniu
+            Hana Solo z pałacu Jabby oraz zniszczeniu pierwszej Gwiazdy Śmierci.
+          </p>
+        </article>
+      </section>
+    </main>
     <footer>
       Po zniknięciu Luke’a Skywalkera droid sam się wyłączył. Przechowywał on
       mapę wiodącą do kryjówki ostatniego Jedi. Aktywował się sam po
       zwycięskiej bitwie na Bazie Starkiller.
+      <a href="#top">Wróć na górę strony</a>
     </footer>
-  </main>
-</body>
+  </body>
 </html>
