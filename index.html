@@ -7,29 +7,24 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
+    <title>Wizytówka IMO</title>
   </head>
 
-  <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html"
-          >Strona główna</a
-        >
-        <a
-          class="navigation__link navigation__link--HTML"
-          href="nauka-html.html"
-          >Nauka HTML
-        </a>
-        <a class="navigation__link navigation__link--CSS" href="nauka-css.html"
-          >Nauka CSS</a
-        >
+  <body id="top">
+    <header class="header">
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+        <a class="navigation__link navigation__link--HTML" href="nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link navigation__link--CSS" href="nauka-css.html">Nauka CSS</a>
+        <a class="navigation__link navigation__link--contact" href="kontakt.html">Kontakt</a>
       </nav>
+      <button  class="hamburger hamburger--js" aria-label="Otwórz menu">🍔</button>
     </header>
 
     <main class="main">
-      <header class="main__header" id="top">
+      <header class="main__header">
         <h1 class="main__heading main__heading--js">Historia R2-D2</h1>
+        <button class="action--js">Zmień nagłówek</button>
       </header>
 
       <section class="about">
@@ -82,7 +77,8 @@
             <ul class="list">
               <li class="list__item">UL</li>
               <li class="list__item">OL</li>
-              <li class="list__item">Section
+              <li class="list__item">
+                Section
                 <ol>
                   <li>Section 1</li>
                   <li>Section 2</li>
@@ -121,10 +117,9 @@
     </main>
 
     <footer class="footer">
-      Po zniknięciu Luke’a Skywalkera droid sam się wyłączył. Przechowywał on
-      mapę wiodącą do kryjówki ostatniego Jedi. Aktywował się sam po zwycięskiej
-      bitwie na Bazie Starkiller.
-      <a class="footer__link" href="#top">Wróć na górę strony</a>
+      <a href="#top">
+        <button class="footer__Go-To-Up-Button">^</button>
+      </a>
     </footer>
     <script src="main.js"></script>
   </body>

@@ -34,3 +34,44 @@ const greet = (age, firstName) => {
 }
 
 greet(35, 'Irek');
+
+
+console.table([1,2,3,4,5]);
+
+const deathStar = {
+    fire: (target) => {
+        console.log(`${target} destroyed`);
+    },
+    diameter: 12000,
+    isOperating: true,
+    title: 'Death Star',
+    levels: 357,
+    population: 11000,
+    commander: {
+        name: 'Darth Vader',
+        age: 44,
+    }
+}
+
+console.dir(deathStar);
+console.log(deathStar);
+console.dir(deathStar.commander);
+console.log(deathStar.commander);
+
+deathStar.fire('R2D2');
+
+const button = document.querySelector('.action--js');
+console.log(button);
+
+button.addEventListener('click',() => {
+    const heading= document.querySelector(".main__heading--js");
+    heading.innerHTML = 'Witaj drogi odwiedzajacy, jestem IMO!';
+    heading.classList.toggle('klasa-z-js');
+});
+
+const hamburger = document.querySelector('.hamburger--js');
+
+hamburger.addEventListener('click', () => {
+    const nav = document.querySelector('.navigation--js');
+    nav.classList.toggle('navigation--open');
+})

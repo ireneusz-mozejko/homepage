@@ -7,21 +7,33 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
 
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Document</title>
+    <title>Wizytówka IMO</title>
   </head>
 
-  <body>
+  <body id="top">
     <header>
       <nav class="navigation">
-        <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
-        <a class="navigation__link navigation__link--HTML" href="nauka-html.html">Nauka HTML</a>
-        <a class="navigation__link navigation__link--CSS" href="nauka-css.html">Nauka CSS</a>
-      </nav>
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a
+          class="navigation__link navigation__link--HTML"
+          href="nauka-html.html"
+          >Nauka HTML</a
+        >
+        <a class="navigation__link navigation__link--CSS" href="nauka-css.html"
+          >Nauka CSS</a
+        >
+        <a
+          class="navigation__link navigation__link--contact"
+          href="kontakt.html"
+          >Kontakt</a
+        >
       </nav>
     </header>
 
     <main>
-      <header id="top">
+      <header>
         <h1>Nauka HTML-a</h1>
       </header>
 
@@ -29,23 +41,24 @@
         <!-- <h2 style="color: red; background: green">Krótka historia</h2> -->
         <h2 class="hotpink-header">Moje ulubione TAGI</h2>
         <article>
-            Młay ale odważny, wszędobylski robot przeznaczony do naprawy usterek
-            pojazdów w czasie lotu w przestrzeni kosmicznej.<br />Pierwotnie
-            służył na królewskim statku Amidali z <b> </b>, gdzie wykazał się
-            niezwykłymi zdolnościami mechanicznymi w czasie ucieczki przed blokadą
-            Federacji Handlowej.<br />Razem z królową trafił na Tatooine, gdzie
-            poznał robota protokolarnego
-            <a href="https://pl.wikipedia.org/wiki/C-3PO">C-3PO</a>, <br />co
-            zapoczątkowało ich niezwykłą, trwającą latami przyjaźń.
-            <a href="#poznanie">Przejdź do pierwszego poznania</a>
+          Młay ale odważny, wszędobylski robot przeznaczony do naprawy usterek
+          pojazdów w czasie lotu w przestrzeni kosmicznej.<br />Pierwotnie
+          służył na królewskim statku Amidali z <b> </b>, gdzie wykazał się
+          niezwykłymi zdolnościami mechanicznymi w czasie ucieczki przed blokadą
+          Federacji Handlowej.<br />Razem z królową trafił na Tatooine, gdzie
+          poznał robota protokolarnego
+          <a href="https://pl.wikipedia.org/wiki/C-3PO">C-3PO</a>, <br />co
+          zapoczątkowało ich niezwykłą, trwającą latami przyjaźń.
+          <a href="#poznanie">Przejdź do pierwszego poznania</a>
         </article>
       </section>
     </main>
-    <footer>
-        Po zniknięciu Luke’a Skywalkera droid sam się wyłączył. Przechowywał on
-        mapę wiodącą do kryjówki ostatniego Jedi. Aktywował się sam po
-        zwycięskiej bitwie na Bazie Starkiller.
-        <a href="#top">Wróć na górę strony</a>
-      </footer>
+
+    <footer class="footer">
+      <a href="#top">
+        <button class="footer__Go-To-Up-Button">^</button>
+      </a>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>
