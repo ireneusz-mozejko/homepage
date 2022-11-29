@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ireneusz-mozejko/homepage/issues"
   },
-  "homepage": "https://github.com/ireneusz-mozejko/homepage#readme"
+  "homepage": "https://github.com/ireneusz-mozejko/homepage#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
