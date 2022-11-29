@@ -4,20 +4,43 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
- 
+
 /*                      */
 
 body {
-  background-color: #fff;
+  background: rgb(174, 220, 238);
+  background: linear-gradient(
+    248deg,
+    rgba(218, 234, 220, 0.314) 0%,
+    rgba(87, 135, 186, 0.479) 100%
+  );
+}
 
+.top__header {
+  display: flex;
+  background-color: #fff;
+  height: 60px;
 }
 
 .main {
   max-width: 1024px;
-  margin: 60px auto 0;
+  margin: 0 auto 0;
+  display: grid;
+  grid-template-areas: "main main main" "section_left . section_right" "footer footer footer";
+  grid-template-columns: 1fr 16px 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.main__header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
 }
 
 .main__heading {
@@ -32,27 +55,22 @@ body {
   color: #92140c;
 }
 
-.header{
-  background: #fff;
-  min-height: 60px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 .navigation {
-  Padding: 16px;
+  padding: 16px;
   display: none;
 }
 
-.navigation--open{
+.navigation--open {
+  background-color: #fff;
   display: block;
+  position: fixed;
+  width: 100%;
 }
 
 .navigation__link {
   color: rgb(110, 30, 30);
   display: block;
-  margin: 0 0 16px;
+  margin-top: 5px;
 }
 
 .navigation__link--homepage {
@@ -63,22 +81,34 @@ body {
   color: #1460aa;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 }
-.form__inputs{
+.form__inputs {
   display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 }
 
 .week-summary {
   padding: 16px;
   border: 1px #ccc solid;
   margin-bottom: 16px;
+}
+
+.section_left {
+  background-color: #fff;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.section_right {
+  background-color: #fff;
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .week-summary--special {
@@ -109,18 +139,18 @@ body {
 }
 
 .list {
-    list-style: square;
+  list-style: square;
 }
 
 .list__item {
-    color: #2ed409;
+  color: #2ed409;
 }
 
 .klasa-z-js {
   background: #2ed409;
 }
 
-.hamburger{
+.hamburger {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -128,17 +158,20 @@ body {
   border: 0;
 }
 
-@media (min-width:768px){
+@media (min-width: 768px) {
   .navigation {
-    padding: 16px;
-    border-radius: 8px;
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    height: 100px;
-  }  
+    position: fixed;
+    padding: 16px;
+    width: 100%;
+    height: 60px;
+    background: #21a179;
+    margin: auto;
+  }
 
-  .hamburger{
+  .hamburger {
     display: none;
   }
 }
