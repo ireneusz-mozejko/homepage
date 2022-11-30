@@ -45,6 +45,20 @@ body {
   &__heading {
     color: #92140c;
   }
+  &__button{
+    background-color: whitesmoke;
+    border: 1px solid palevioletred;
+    color: palevioletred;
+    width: 150px;
+    height: 35px;
+  }
+  &__button:hover{
+    background-color: palevioletred;
+    border: 1px solid palevioletred;
+    color: whitesmoke;
+    width: 150px;
+    height: 35px;
+  }
 }
 
 .about {
@@ -186,3 +200,4 @@ body {
     display: none;
   }
 }
+

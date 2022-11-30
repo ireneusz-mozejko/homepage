@@ -39,6 +39,20 @@ body {
 .main__heading {
   color: #92140c;
 }
+.main__button {
+  background-color: whitesmoke;
+  border: 1px solid palevioletred;
+  color: palevioletred;
+  width: 150px;
+  height: 35px;
+}
+.main__button:hover {
+  background-color: palevioletred;
+  border: 1px solid palevioletred;
+  color: whitesmoke;
+  width: 150px;
+  height: 35px;
+}
 
 .about__heading {
   color: #1460aa;
