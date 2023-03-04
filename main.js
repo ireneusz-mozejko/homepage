@@ -75,3 +75,12 @@ hamburger.addEventListener('click', () => {
     const nav = document.querySelector('.navigation--js');
     nav.classList.toggle('navigation--open');
 })
+
+
+const flour = 1000;
+let hydration = 60;
+let water = 1000 / hydration;
+let salt = water / 50;
+
+console.log(flour + water + salt);
+
